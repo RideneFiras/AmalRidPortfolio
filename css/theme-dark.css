@@ -1,0 +1,101 @@
+/* Dark theme */
+
+[data-theme="dark"] {
+  /* Colors */
+  --bg-color: #0f172a;
+  --text-color: #e2e8f0;
+  --heading-color: #f1f5f9;
+  --text-muted: #94a3b8;
+  
+  /* Accent colors (green theme in dark) */
+  --accent-color: #22d3ee;
+  --accent-color-rgb: 34, 211, 238;
+  --accent-hover-color: #06b6d4;
+  
+  /* UI elements */
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --input-bg: #1e293b;
+  --btn-text-color: #0f172a;
+  --placeholder-bg: #334155;
+  
+  /* Navigation */
+  --nav-bg: #1e293b;
+  --nav-shadow: rgba(0, 0, 0, 0.3);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.4);
+  
+  /* Hero section specific */
+  --hero-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --hero-overlay: rgba(30, 41, 59, 0.8);
+  
+  /* Domain cards */
+  --domain-card-bg: #1e293b;
+  --domain-card-border: #334155;
+  --domain-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  
+  /* Media items */
+  --media-item-bg: #1e293b;
+  --media-item-hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  
+  /* Footer */
+  --footer-bg: #1e293b;
+  --footer-text: #94a3b8;
+  --footer-border: #334155;
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] img:not(.no-filter) {
+  opacity: 0.9;
+}
+
+[data-theme="dark"] .img-placeholder {
+  background-color: var(--placeholder-bg);
+  color: var(--text-muted);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] input, 
+[data-theme="dark"] textarea, 
+[data-theme="dark"] select {
+  background-color: var(--input-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: var(--text-muted);
+}
+
+/* Special dark theme highlights */
+[data-theme="dark"] .recognition-item {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-left-color: var(--accent-color);
+}
+
+[data-theme="dark"] .theme-badge {
+  background-color: var(--accent-color);
+  color: var(--btn-text-color);
+}
+
+/* Dark theme scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

@@ -1,0 +1,120 @@
+/* Ocean theme - Blue accents */
+
+[data-theme="ocean"] {
+  /* Colors */
+  --bg-color: #f8fafc;
+  --text-color: #1e293b;
+  --heading-color: #0f172a;
+  --text-muted: #64748b;
+  
+  /* Accent colors (blue/ocean theme) */
+  --accent-color: #0ea5e9;
+  --accent-color-rgb: 14, 165, 233;
+  --accent-hover-color: #0284c7;
+  
+  /* UI elements */
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --input-bg: #ffffff;
+  --btn-text-color: #ffffff;
+  --placeholder-bg: #f1f5f9;
+  
+  /* Navigation */
+  --nav-bg: #ffffff;
+  --nav-shadow: rgba(14, 165, 233, 0.1);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(14, 165, 233, 0.1);
+  --shadow-md: 0 4px 12px rgba(14, 165, 233, 0.15);
+  --shadow-lg: 0 8px 25px rgba(14, 165, 233, 0.15);
+  
+  /* Hero section specific */
+  --hero-bg: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  --hero-overlay: rgba(255, 255, 255, 0.9);
+  
+  /* Domain cards */
+  --domain-card-bg: #ffffff;
+  --domain-card-border: #e2e8f0;
+  --domain-card-shadow: 0 2px 8px rgba(14, 165, 233, 0.1);
+  
+  /* Media items */
+  --media-item-bg: #ffffff;
+  --media-item-hover-shadow: 0 6px 20px rgba(14, 165, 233, 0.15);
+  
+  /* Footer */
+  --footer-bg: #f1f5f9;
+  --footer-text: #64748b;
+  --footer-border: #e2e8f0;
+}
+
+/* Ocean theme specific elements */
+[data-theme="ocean"] site-header {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+  box-shadow: 0 2px 4px var(--nav-shadow);
+}
+
+[data-theme="ocean"] site-hero {
+  background: var(--hero-bg);
+  position: relative;
+}
+
+[data-theme="ocean"] site-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(240, 249, 255, 0.8) 0%, rgba(224, 242, 254, 0.8) 100%);
+  z-index: 1;
+}
+
+[data-theme="ocean"] .recognition-item {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-left-color: var(--accent-color);
+}
+
+[data-theme="ocean"] .theme-badge {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover-color) 100%);
+  color: var(--btn-text-color);
+}
+
+/* Ocean-specific hover effects */
+[data-theme="ocean"] .card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-color);
+}
+
+[data-theme="ocean"] .btn:hover {
+  background: linear-gradient(135deg, var(--accent-hover-color) 0%, var(--accent-color) 100%);
+}
+
+/* Ocean theme decorative elements */
+[data-theme="ocean"] site-footer {
+  background: linear-gradient(135deg, var(--footer-bg) 0%, #e0f2fe 100%);
+}
+
+/* Special ocean wave decoration for hero */
+[data-theme="ocean"] site-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    var(--accent-color) 0%, 
+    var(--accent-hover-color) 25%, 
+    var(--accent-color) 50%, 
+    var(--accent-hover-color) 75%, 
+    var(--accent-color) 100%);
+  z-index: 3;
+}
+
+/* Ocean-themed link styling */
+[data-theme="ocean"] a.external-link::after {
+  content: '🌊';
+  margin-left: 0.25rem;
+  font-size: 0.875em;
+  opacity: 0.7;
+}

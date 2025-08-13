@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View Amal Ridene's media appearances, speaking engagements, and featured articles. Explore her presentations at global conferences and media interviews.">
+  <meta name="keywords" content="Amal Ridene media, speaking engagements, conference presentations, interviews, BETD, COP, RewirEd Summit, MENA Climate Week">
+  <meta name="author" content="Amal Ridene">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Media & Speaking Engagements - Amal Ridene">
+  <meta property="og:description" content="View Amal Ridene's media appearances, speaking engagements, and featured articles.">
+  <meta property="og:image" content="Assets/amal.png">
+  
+  <title>Media & Articles - Amal Ridene</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme-default.css">
+  <link rel="stylesheet" href="css/theme-dark.css">
+  <link rel="stylesheet" href="css/theme-ocean.css">
+</head>
+<body>
+  <!-- Skip to main content link -->
+  <a href="#main" class="skip-link sr-only">Skip to main content</a>
+  
+  <!-- Site Header -->
+  <site-header></site-header>
+  
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <!-- Media Hero Section -->
+    <section class="section" id="media-hero" style="background: var(--hero-bg); position: relative;">
+      <div class="container">
+        <div class="hero-content text-center">
+          <h1 class="hero-title">Media & Speaking Engagements</h1>
+          <div class="hero-subtitle text-large">
+            Sharing insights on climate finance, youth leadership, and sustainable development
+          </div>
+          <div class="hero-description" style="max-width: 700px; margin: 0 auto;">
+            <p>
+              From keynote presentations at international conferences to media interviews and panel discussions, 
+              I actively share knowledge and advocate for youth-inclusive climate action and sustainable finance solutions.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Featured Media Highlight -->
+        <div class="featured-media" style="margin-top: 3rem;">
+          <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center; padding: 2rem;">
+            <h3 style="margin-bottom: 1rem; color: var(--accent-color);">Recent Highlight</h3>
+            <figure>
+              <div class="img-placeholder" style="height: 200px; margin-bottom: 1rem;">
+                <span>Photo placeholder — BETD 2024 keynote presentation in Berlin</span>
+              </div>
+              <figcaption>
+                Young Keynote Speaker at Berlin Energy Transition Dialogue 2024, 
+                discussing youth perspectives in climate policy and finance
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Media Filters -->
+    <section class="section" id="media-filters" style="padding: 2rem 0; background-color: var(--card-bg);">
+      <div class="container">
+        <div class="filters-container text-center">
+          <h2 style="margin-bottom: 1rem;">Filter by Category</h2>
+          <div class="media-filters flex-center" style="gap: 0.5rem; flex-wrap: wrap;">
+            <!-- Filter buttons will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Media Grid -->
+    <section class="section" id="media-content">
+      <div class="container">
+        <div class="media-grid grid grid-3">
+          <!-- Media items will be populated by JavaScript -->
+        </div>
+        
+        <div class="load-more text-center" style="margin-top: 3rem; display: none;">
+          <button class="btn btn-secondary" onclick="loadMoreMedia()">Load More Articles</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Speaking Topics Section -->
+    <section class="section" id="speaking-topics" style="background: var(--hero-bg);">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Speaking Topics & Expertise</h2>
+          <p class="text-muted">Areas where I provide insights and keynote presentations</p>
+        </div>
+        
+        <div class="topics-grid grid grid-2">
+          <div class="topic-card card">
+            <div class="topic-icon">🌍</div>
+            <h3>Climate Finance & Policy</h3>
+            <ul class="topic-points">
+              <li>International climate negotiations and COP processes</li>
+              <li>Blended finance and innovative funding mechanisms</li>
+              <li>Youth perspectives in climate policy</li>
+              <li>Sustainable development finance in emerging markets</li>
+            </ul>
+          </div>
+          
+          <div class="topic-card card">
+            <div class="topic-icon">👥</div>
+            <h3>Youth Leadership & Empowerment</h3>
+            <ul class="topic-points">
+              <li>Engaging youth in global decision-making</li>
+              <li>Building inclusive youth movements</li>
+              <li>Leadership development for social impact</li>
+              <li>Cross-cultural collaboration and global citizenship</li>
+            </ul>
+          </div>
+          
+          <div class="topic-card card">
+            <div class="topic-icon">🤝</div>
+            <h3>Stakeholder Engagement</h3>
+            <ul class="topic-points">
+              <li>Multi-sector collaboration for sustainability</li>
+              <li>Investor engagement on ESG and climate</li>
+              <li>Building partnerships across diverse organizations</li>
+              <li>Facilitating inclusive dialogue and consensus-building</li>
+            </ul>
+          </div>
+          
+          <div class="topic-card card">
+            <div class="topic-icon">🎯</div>
+            <h3>Sustainable Development</h3>
+            <ul class="topic-points">
+              <li>SDG implementation and measurement</li>
+              <li>Innovation in development finance</li>
+              <li>Resilience and adaptation strategies</li>
+              <li>Inclusive growth and community empowerment</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="speaking-cta text-center" style="margin-top: 3rem;">
+          <h3 style="margin-bottom: 1rem;">Interested in having me speak at your event?</h3>
+          <p class="text-muted" style="margin-bottom: 2rem;">
+            I'm available for keynotes, panel discussions, workshops, and virtual presentations on topics 
+            related to climate finance, youth empowerment, and sustainable development.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Discuss Speaking Opportunities</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sources & References Section -->
+    <section class="section" id="sources">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Sources & References</h2>
+          <p class="text-muted">External links and references for the content featured above</p>
+        </div>
+        
+        <div class="sources-list">
+          <!-- Sources will be populated by JavaScript -->
+        </div>
+        
+        <div class="sources-note card" style="margin-top: 2rem; padding: 1.5rem; background: rgba(var(--accent-color-rgb), 0.05); border-left: 4px solid var(--accent-color);">
+          <h4 style="margin-bottom: 0.5rem;">📋 Note on Sources</h4>
+          <p style="margin: 0;">
+            All speaking engagements, media features, and quotes are verified and linked to their original sources. 
+            This ensures transparency and allows visitors to access the full context of each appearance or interview.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Site Footer -->
+  <site-footer></site-footer>
+  
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+  
+  <!-- Custom styles for media page -->
+  <style>
+    .filters-container {
+      position: sticky;
+      top: 80px;
+      z-index: 10;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .media-filters {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .filter-btn {
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--border-color);
+      background: transparent;
+      color: var(--text-color);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    
+    .filter-btn:hover,
+    .filter-btn.active {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--btn-text-color);
+    }
+    
+    .filter-btn.active {
+      box-shadow: 0 2px 8px rgba(var(--accent-color-rgb), 0.3);
+    }
+    
+    .featured-media {
+      animation: fadeInUp 0.6s ease;
+    }
+    
+    .topic-card {
+      transition: all 0.3s ease;
+    }
+    
+    .topic-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .topic-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .topic-card h3 {
+      margin-bottom: 1rem;
+      color: var(--heading-color);
+    }
+    
+    .topic-points {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .topic-points li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+      line-height: 1.4;
+    }
+    
+    .topic-points li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+    
+    .sources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+    
+    .source-link {
+      display: block;
+      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      color: var(--text-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .source-link:hover {
+      background-color: var(--accent-color);
+      color: var(--btn-text-color);
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+    
+    .speaking-cta {
+      background: rgba(var(--accent-color-rgb), 0.05);
+      border-radius: var(--border-radius-lg);
+      padding: 2rem;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .filters-container {
+        position: relative;
+        top: 0;
+        margin-bottom: 1rem;
+      }
+      
+      .media-filters {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .filter-btn {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .topics-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .topic-card {
+        text-align: center;
+      }
+      
+      .topic-points {
+        text-align: left;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      
+      .speaking-cta {
+        padding: 1.5rem;
+      }
+    }
+    
+    /* Loading states */
+    .media-grid.loading {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    
+    .loading-spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--border-color);
+      border-radius: 50%;
+      border-top-color: var(--accent-color);
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+  
+  <!-- JavaScript for additional media functionality -->
+  <script>
+    // Function for load more button (placeholder)
+    function loadMoreMedia() {
+      console.log('Load more media items');
+      // In a real implementation, this would load additional media items
+      // For now, just hide the button
+      document.querySelector('.load-more').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

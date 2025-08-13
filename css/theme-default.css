@@ -1,0 +1,128 @@
+/* Default theme - Light with green accents */
+
+:root,
+[data-theme="default"] {
+  /* Colors */
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --heading-color: #1a1a1a;
+  --text-muted: #666666;
+  
+  /* Accent colors (green theme) */
+  --accent-color: #22c55e;
+  --accent-color-rgb: 34, 197, 94;
+  --accent-hover-color: #16a34a;
+  
+  /* UI elements */
+  --card-bg: #ffffff;
+  --border-color: #e5e5e5;
+  --input-bg: #ffffff;
+  --btn-text-color: #ffffff;
+  --placeholder-bg: #f9f9f9;
+  
+  /* Navigation */
+  --nav-bg: #ffffff;
+  --nav-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Border radius */
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Hero section specific */
+  --hero-bg: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  --hero-overlay: rgba(255, 255, 255, 0.9);
+  
+  /* Domain cards */
+  --domain-card-bg: #ffffff;
+  --domain-card-border: #e5e5e5;
+  --domain-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Media items */
+  --media-item-bg: #ffffff;
+  --media-item-hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  
+  /* Footer */
+  --footer-bg: #f8f9fa;
+  --footer-text: #666666;
+  --footer-border: #e5e5e5;
+}
+
+/* Component-specific styles for default theme */
+site-header {
+  background-color: var(--nav-bg);
+  box-shadow: 0 2px 4px var(--nav-shadow);
+}
+
+site-hero {
+  background: var(--hero-bg);
+  position: relative;
+}
+
+site-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--hero-overlay);
+  z-index: 1;
+}
+
+site-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+domain-card .card {
+  background: var(--domain-card-bg);
+  border-color: var(--domain-card-border);
+  box-shadow: var(--domain-card-shadow);
+}
+
+domain-card .card:hover {
+  box-shadow: var(--media-item-hover-shadow);
+}
+
+media-item .card {
+  background: var(--media-item-bg);
+}
+
+media-item .card:hover {
+  box-shadow: var(--media-item-hover-shadow);
+}
+
+site-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  border-top: 1px solid var(--footer-border);
+}
+
+/* Theme-specific adjustments */
+.theme-badge {
+  background-color: var(--accent-color);
+  color: var(--btn-text-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Link styling in default theme */
+a.external-link::after {
+  content: '↗';
+  margin-left: 0.25rem;
+  font-size: 0.875em;
+  opacity: 0.7;
+}
+
+/* Special styling for recognition items */
+.recognition-item {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border-left: 4px solid var(--accent-color);
+}
